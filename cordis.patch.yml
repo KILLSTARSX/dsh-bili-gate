@@ -1,0 +1,16 @@
+# dsh-bili-gate 的 bundle patch —— 把门卫挂进 DSH 配置树
+#
+# 所有键都有默认值，整段 config 省略也能跑。常用项：
+#   cwd           新建会话的工作目录，留空 = DSH 默认工作区
+#   ownerMid      主人 UID，0 = 唤醒词里不提 UID
+#   sessionTitle  会话在侧栏里的名字
+#   dryRun        true = 只记日志，不建会话不投递
+#
+# 想改这些值，在自己的 profile cordis.patch.yml 里用同一个 id 覆盖，
+# 别改这个文件，免得下次 git pull 冲突。
+
+- insert:
+    - id: dsh-bili-gate
+      name: dsh-bili-gate
+      config:
+        sessionTitle: B站私信

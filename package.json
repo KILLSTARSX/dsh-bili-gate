@@ -1,0 +1,51 @@
+{
+  "name": "dsh-bili-gate",
+  "version": "0.2.1",
+  "description": "B站私信门卫：给 dsh-bili-eyes 提供进程内 biliEyesGate 服务（协议 v2），把收件箱消息送进 DSH 会话，由会话里的模型自己回",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./protocol": "./src/gate.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "test",
+    "docs",
+    "cordis.patch.yml",
+    "dsh.plugin.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.mjs\"",
+    "test:watch": "node --test --watch \"test/*.test.mjs\""
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "bilibili",
+    "bili",
+    "gate"
+  ],
+  "author": "KILL-STAR SX (https://github.com/KILLSTARSX)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KILLSTARSX/dsh-bili-gate.git"
+  },
+  "homepage": "https://github.com/KILLSTARSX/dsh-bili-gate",
+  "bugs": {
+    "url": "https://github.com/KILLSTARSX/dsh-bili-gate/issues"
+  },
+  "license": "MIT"
+}

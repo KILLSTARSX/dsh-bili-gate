@@ -1,0 +1,9 @@
+{
+  "name": "dsh-bili-gate",
+  "description": "B站私信门卫：注册 biliEyesGate 进程内服务（协议 v2），把收件箱消息送进专用 DSH 会话，由会话里的模型自己用 bili_dm 回复",
+  "version": "0.2.1",
+  "entry": {
+    "name": "dsh-bili-gate",
+    "inject": []
+  }
+}
