@@ -192,7 +192,7 @@ tail -n 50 ~/.dsh/bili-gate.log
 ## 开发与测试
 
 ```bash
-npm test           # 54 个用例，约 1 秒
+npm test           # 55 个用例，约 1 秒
 npm run test:watch
 ```
 
